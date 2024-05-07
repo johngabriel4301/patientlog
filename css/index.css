@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 5.5rem;
+    padding: 0 1rem;
+    background-color: #E7DFD8;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav .links{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+.links .desktop{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+nav .links .s-size{
+    width: 13rem;
+    height:100vh;
+    position: absolute;
+    background-color: #E7DFD8;
+    padding-top: 1rem;
+    left: -16rem;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+nav .links .s-size{
+    display: none;
+}
+nav .links .s-size .log-i{
+    width: 100%;
+    height: 4rem;                                                                      
+}
+
+nav .links .s-size .log-i .icon-x{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+nav .links .s-size li, 
+nav .links .s-size a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav .links li{
+    list-style-type: none;
+}
+
+nav .links li i{
+    color: #54504D;
+    font-size: 1.2rem;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .3rem;
+}
+
+nav .links .icon-bars{
+    display: none;
+}
+
+
+
+.links ul a{
+    text-decoration: none;
+    height: 5.5rem;
+    
+}
+
+.links a li{
+    list-style-type: none;
+    color: #54504D;
+    font-weight: 650;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    line-height: 5.5rem;
+    height: 5.5rem;
+    padding: 0 1rem;
+}
+
+.links a .overview{
+    color: #E7DFD8;
+    background-color: #54504D;
+}
+
+.links a .obj{
+    color: #E7DFD8;
+    background-color: #54504D;
+}
+
+.links a .keyf{
+    color: #E7DFD8;
+    background-color: #54504D;
+}
+
+
+.links a li:hover{
+    color: #E7DFD8;
+    background-color: #54504D;
+    transition-duration: .3s;
+}
+
+nav img{
+    width: 4.5rem;
+    margin-top: .4rem;
+
+}
+
+nav .login{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .login .log{
+    width: 7rem;
+    height: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #54504D;
+    color: #E7DFD8;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+nav .login .log:hover{
+    opacity: .8;
+    transition: .3s;
+}
+
+
+.container1{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1 .content{
+    padding-top: 6.5rem;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1 .content .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.container1 .content .txt h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.container1 .content .txt h5{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.log1{
+    margin-top: 2rem;
+    width: 8rem;
+    height: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    background-color: #54504D;
+    color: #E7DFD8;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.log1:hover{
+    opacity: .8;
+    transition: .3s;
+}
+
+.container1 .img1{
+    padding-top: 5.5rem;
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container1 .img1 img{
+    height: 30rem;
+}
+
+
+
+.container2{
+    padding-top: 5.5rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container2 .content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .content .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container2 .content .txt h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+
+.container2 .content .txt h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.container2 .img1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .img1 img{
+    width: 80%;
+}
+
+.container3{
+    padding-top: 5.5rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container3 .content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 .content .txt{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: flex-start;
+}
+
+.container3 .content .txt h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+
+.container3 .content .txt h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    margin-left: 2rem;
+}
+
+.container3 .img1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container3 .img1 img{
+    width: 90%;
+}
+
+
+.container4{
+    padding-top: 5.5rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container4 .content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 .content .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container4 .content .txt h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+}
+
+.container4 .content .txt h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+.container4 .content .txt h3{
+    margin-top: 1rem;
+}
+
+.container4 .img1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container4 .img1 img{
+    width: 80%;
+}
+
+.line{
+    width: 100%;
+    height: .2rem;
+    background-color: #54504D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #54504D;
+}
+
+.footer{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h5{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+}
+
+@media (max-width:1224px){
+    nav .login{
+        width: 45%;
+    }
+    nav .links{
+        width: 55%;
+    }
+    .links ul{
+        width: 100%;
+    }
+    .container1 .content{
+        padding-top: 6rem;
+    }
+    
+    .container1 .content .txt h1{
+        font-size: 3rem;
+
+    }
+    .container1 .content .txt h5{
+        font-size: 1.5rem;
+    }
+    .log1{
+        width: 7rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+    
+    
+    .container1 .img1{
+        padding-top: 5.5rem;
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .container1 .img1 img{
+        height: 28rem;
+    }
+
+    .container2{
+        padding-top: 5rem;
+    }
+    .container3{
+        padding-top: 5rem;
+    }
+    
+    .container3 .content{
+        width: 55%;
+    }
+    
+    .container3 .img1{
+        width: 45%;
+    }
+}
+
+@media (max-width:1115px){
+    nav .login{
+        width: 40%;
+    }
+    nav .links{
+        width: 60%;
+    }
+    .links ul{
+        width: 100%;
+    }
+
+    .container1 .content{
+        padding-top: 5rem;
+    }
+    
+    .container1 .content .txt h1{
+        font-size: 2.5rem;
+    }
+    .container1 .content .txt h5{
+        font-size: 1.2rem;
+    }
+    .log1{
+        width: 6.5rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+    
+    
+    .container1 .img1{
+        padding-top: 5rem;
+    }
+    
+    .container1 .img1 img{
+        height: 25rem;
+    }
+
+    .container2{
+        padding-top: 4rem;
+    }
+     
+    .container2 .content .txt h1{
+        font-size: 3rem;
+    }
+    
+    .container2 .content .txt h5{
+        font-size: 1.1rem;
+
+    }
+
+    .container3{
+        padding-top: 4.5rem;
+    }
+    
+    .container3 .content{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container3 .content .txt{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: flex-start;
+    }
+    .container3 .img1{
+        width: 45%;
+    }
+
+    .container4{
+        padding-top: 4.5rem;
+    }
+    
+    .container4 .content{
+        margin-left: 1.5rem;
+        width: 65%;
+    }
+}
+
+@media (max-width:1030px){
+    nav{
+        height: 4.5rem;
+    }
+
+    .links ul a{
+        height: 4.5rem;
+    }
+    
+    .links a li{
+        line-height: 4.5rem;
+        height: 4.5rem;
+    }
+    nav .login .log1{
+        width: 40%;
+    }
+    .container1 .content, .container1 .img1{
+        padding-top: 5.5rem;
+    }
+
+    nav .links{
+        width: 70%;
+    }
+    .links ul{
+        width: 100%;
+    }
+
+    nav img{
+        width: 4rem;
+        margin-top: .4rem;
+    
+    }
+    .container1 .content{
+        padding-top: 3rem;
+    }
+
+    .container1 .img1{
+        padding-top: 3rem;
+    }
+
+    .container1 .img1 img{
+        height: 23rem;
+    }
+    .container2{
+        padding-top: 3rem;
+    }
+
+    .container2 .content{
+        margin-left: 1rem;
+    }
+    
+
+    .container2 .content .txt h5{
+        font-size: 1.1rem;
+    }
+
+    .container4{
+        padding-top: 3rem;
+    }
+    
+    
+    .container4 .content .txt h1{
+        font-size: 3.2rem;
+    }
+    
+    .container4 .content .txt h5{
+        font-size: 1rem;
+
+    }
+
+}
+@media (max-width:950px){
+    nav .links .s-size{
+        display: flex;
+    }
+    nav .links .desktop{
+        display: none;
+    }
+
+    nav .links .icon-bars{
+        display: flex;
+    }
+
+    nav .links{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav .links img{
+        width: 3.5rem;
+    }
+
+    .links a li{
+        font-size: 1rem;
+    }
+
+    nav .login{
+        display: none;
+    }
+
+
+    nav .login.side{
+        display: flex;
+        margin-top: .5rem;
+    }
+    
+    nav .login .log{
+        width: 6rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .container1 .content{
+        width: 100%;
+        padding-top: 4.5rem;
+        
+    }
+
+    .container1 .content .txt{
+        align-items: center;   
+    }
+
+    .log1{
+        margin-top: 1rem;
+    }
+
+    .container1 .img1{
+        width: 100%;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container2{
+        padding-top: 7rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container2 .content{
+        width: 100%;
+    }
+    
+    .container2 .content .txt{
+        align-items: center;
+    }
+    
+    .container2 .content .txt h1{
+        font-size: 3rem;
+    }
+    
+    .container2 .content .txt h5{
+        font-size: 1rem;
+
+    }
+    
+    .container2 .img1{
+        padding-top: 1rem;
+        width: 50%;
+    }
+    .container2 .img1 img{
+        width: 80%;
+    }
+
+    .container3{
+        padding-top: 6.6rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .container3 .content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container3 .content .txt{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container3 .content .txt h1{
+        font-size: 3.3rem;
+    }
+    
+    .container3 .content .txt h5{
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        margin-left: 2rem;
+    }
+    
+    .container3 .img1{
+        padding-top: 1rem;
+        width: 70%;
+    }
+
+    .container4{
+        padding-top: 6rem;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .container4 .content{
+        width: 90%;
+        display: flex;
+    }
+    
+    .container4 .content .txt{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container4 .content .txt h1{
+        font-size: 2.8rem;
+        line-height: 2.5rem;
+        margin-bottom: .8rem;
+    }
+    
+    .container4 .content .txt h5{
+        font-size: .8rem;
+    }
+    .container4 .content .txt h3{
+        margin-top: 1rem;
+    }
+    
+    .container4 .img1{
+        padding-top: 1.5rem;
+        width: 50%;
+    }
+    .line{
+        margin: .5rem 0;
+    }
+    
+    .footer{
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer h5{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width:550px){
+    nav{
+        height: 3.5rem;
+    }
+
+    nav .links img{
+        width: 3rem;
+    }
+
+    .container1 .content{
+        padding-top: 4rem;
+    }
+
+    .container1 .img1{
+        padding-top: 1rem;
+    }
+
+    .container1 .img1 img{
+        width: 26rem;
+    }
+
+    .container2{
+        padding-top: 5rem;
+        justify-content: flex-start;
+    }
+
+    .container2 .content{
+        width: 90%;
+    }
+
+    .container2 .content .txt h1{
+        font-size: 2.8rem;
+    }
+    
+    .container2 .content .txt h5{
+        font-size: .7rem;
+
+    }
+
+    .container2 .img1{
+        padding-top: 2rem;
+    }
+
+    .container3{
+        padding-top: 5.5rem;
+    }
+    
+    .container3 .content .txt h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .container3 .content .txt h5{
+        font-size: 1.1rem;
+    }
+    
+    .container3 .img1{
+        padding-top: 1.5rem;
+        width: 70%;
+    }
+    .container4{
+        padding-top: 5rem;
+    }
+    
+    .container4 .content{
+        width: 90%;
+        display: flex;
+    }
+    
+    .container4 .content .txt h1{
+        font-size: 2.5rem;
+        line-height: 2rem;
+        margin-bottom: .8rem;
+    }
+    
+    .container4 .content .txt h5{
+        font-size: .7rem;
+    }
+    .container4 .content .txt h3{
+        margin-top: .9rem;
+    }
+    
+    .container4 .img1{
+        padding: 1.5rem 0   ;
+        width: 50%;
+    }
+    .line{
+        margin:0;
+    }
+    
+    .footer{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer h5{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:475px){
+    .container1 .img1 img{
+        width: 23rem;
+    }
+    .container1 .content .txt h5{
+        font-size: 1rem;
+    }
+
+    .container2{
+        padding-top: 5rem;
+    }
+    .container2 .content .txt h1{
+        font-size: 2.3rem;
+    }
+    
+    .container2 .content .txt h5{
+        font-size: .5rem;
+
+    }
+
+    .container2 .img1{
+        padding-top: 1rem;
+    }
+
+    .container2 .content .txt h1{
+        margin-bottom: 1rem;
+    }
+
+    .container3{
+        padding-top: 5rem;
+    }
+    
+    .container3 .content .txt h1{
+        font-size: 2.5rem;
+    }
+    
+    .container3 .content .txt h5{
+        font-size: .7rem;
+    }
+
+    .container4{
+        padding-top: 5rem;
+    }
+    
+    .container4 .content{
+        width: 90%;
+        display: flex;
+    }
+    
+    .container4 .content .txt h1{
+        font-size: 2.2rem;
+        line-height: 1.8rem;
+        margin-bottom: .7rem;
+    }
+    
+    .container4 .content .txt h5{
+        font-size: .6rem;
+        letter-spacing: .1rem;
+    }
+    .container4 .content .txt h3{
+        margin-top: .6rem;
+    }
+
+    .footer{
+        height: 3.5rem;
+    }
+    
+    .footer h5{
+        font-size: .6rem;
+    }
+}

@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 5.5rem;
+    padding: 0 1rem;
+    background-color: #E7DFD8;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav img{
+    width: 4.5rem;
+    margin-top: .4rem;
+}
+
+.links{
+    width: 34%;
+}
+
+.links.edit{
+    width: 41%;
+}
+.title{
+    width: 65%;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    color: #54504D;
+}
+
+.form1{
+    padding-top: 7rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    color: #54504D;
+    font-size: 1.1rem;
+}
+
+.form1 .inp{
+    width: 90%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form1 label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin-left: .2rem;
+}
+
+.form1 input{
+    padding-left: .2rem;
+    height: 2.2rem;
+    border: .1rem solid #54504D; 
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: #54504D;
+}
+
+.form1 .inp .inps{
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 .inp .inps .inp1{
+    width: 22rem;
+}
+
+.form1 .inp .inps .inp2{
+    width: 16rem;
+}
+.form1 .inp .inps .inp3{
+    width: 22rem;
+}
+
+.form1 .inp .inps .gends{
+    width: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form1 .inp .inps .gends .rdio{
+    margin-left: .5rem;
+    width: 1rem;
+}
+
+.form1 .inp .inps .gends .rdio1{
+   width: 1rem;
+}
+
+.form1 .inp .inps .inp4{
+    width: 30rem;
+}
+
+.form1 .inp.add{
+    width: 90%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form1 .inp.add label{
+    margin-left: .2rem;
+}
+
+
+.form1 .inp.add  .adds{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form1 .inp.add  .adds input{
+    width: 22rem;
+}
+
+.form1 .btns{
+    width: 93%;
+    height: 6rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.form1 .btns .cancel{
+    background-color: white;
+    color: #54504D;
+    width: 8rem;
+    height: 2.2rem;
+    border: .2rem solid #54504D;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.form1 .btns .cancel:hover{
+    opacity: .7;
+    transition: .3s;
+}
+
+.form1 .btns .confirm{
+    background-color: #54504D;
+   color: #E7DFD8;
+  width: 8rem;
+   height: 2.2rem;
+   border: .2rem solid #54504D;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.1rem;
+   cursor: pointer;
+   margin-right: 1rem;
+}
+
+.form1 .btns .confirm:hover{
+    opacity: .7;
+    transition: .3s;
+}
+
+.form2{
+    padding-top: 5.5rem;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form2 .inps{
+    display: flex;
+    flex-direction: column;
+}
+
+.form2 .inps label{
+    font-size: 1.2rem;
+    color: #54504D;
+    font-weight: 600;
+}
+
+.form2 .inps input{
+    height: 2.2rem;
+    width: 25rem;
+    font-size: 1.1rem;
+    color: #54504D;
+    padding-left: .2rem;
+    margin-bottom: 1.5rem;
+    border: .1rem solid #54504D;
+    font-family: "Poppins", sans-serif;
+}
+
+.form2 .btns{
+    width: 80%;
+    height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.form2 .btns .confirm{
+    background-color: #54504D;
+    color: #E7DFD8;
+    width: 8rem;
+    height: 2.2rem;
+    border: .2rem solid #54504D;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.form2 .btns .confirm:hover{
+    opacity: .7;
+    transition: .3s;
+}
+
+.btns .cancel{
+    background-color: white;
+    color: #54504D;
+    width: 8rem;
+    height: 2.2rem;
+    border: .2rem solid #54504D;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+
+}
+
+.btns .cancel:hover{
+    opacity: .7;
+    transition: .3s;
+}
+
+@media (max-width:1200px){
+    .form1{
+        padding-top: 7rem;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        color: #54504D;
+        font-size: 1.1rem;
+    }
+    
+    .form1 .inp{
+        width: 92%;
+    }
+    
+    .form1 label{
+        font-size: 1.1rem;
+    }
+    
+    .form1 input{
+        padding-left: .2rem;
+        height: 2.2rem;
+        border: .1rem solid #54504D; 
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: #54504D;
+    }
+    
+    .form1 .inp .inps{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form1 .inp .inps .inp1{
+        width: 21rem;
+    }
+    
+    .form1 .inp .inps .inp2{
+        width: 15rem;
+    }
+    .form1 .inp .inps .inp3{
+        width: 20rem;
+    }
+    
+    .form1 .inp .inps .gends .rdio{
+        margin-left: .5rem;
+        width: 1rem;
+    }
+    
+    .form1 .inp .inps .inp4{
+        width: 28rem;
+    }
+    
+    .form1 .inp.add{
+        width: 92%;
+    }
+    
+    .form1 .inp.add label{
+        margin-left: .2rem;
+    }
+
+    .form1 .inp.add  .adds input{
+        width: 20rem;
+    }
+    
+    .form1 .btns{
+        width: 93%;
+        height: 6rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+}
+
+@media (max-width:1100px){
+    
+    .form1 .inp{
+        width: 95%;
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .form1 label{
+        font-size: 1.1rem;
+    }
+    
+    
+    .form1 .inp .inps .inp1{
+        width: 18rem;
+    }
+    
+    .form1 .inp .inps .inp2{
+        width: 14rem;
+    }
+    .form1 .inp .inps .inp3{
+        width: 18rem;
+    }
+    
+    .form1 .inp .inps .gends{
+        width: 10rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .form1 .inp .inps .gends .rdio{
+        margin-left: .5rem;
+        width: 1rem;
+    }
+    
+    .form1 .inp .inps .gends .rdio1{
+       width: 1rem;
+    }
+    
+    .form1 .inp .inps .inp4{
+        width: 28rem;
+    }
+    
+    .form1 .inp.add{
+        width: 95%;
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .form1 .inp.add label{
+        margin-left: .2rem;
+    }
+    
+    
+    .form1 .inp.add  .adds{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .form1 .inp.add  .adds input{
+        width: 18rem;
+    }
+    
+    .form1 .btns{
+        width: 93%;
+        height: 6rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+}
+
+@media (max-width:950px)
+{
+    .form1{
+        height: auto;
+        align-items: center;
+    }
+    
+    .form1 .inp{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .form1 label{
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        margin-left: .2rem;
+    }
+
+    .form1 .inp .inps .inp1{
+        width: 22rem;
+    }
+    
+    .form1 .inp .inps .inp2{
+        width: 22rem;
+    }
+    .form1 .inp .inps .inp3{
+        width: 22rem;
+    }
+
+    .form1 .inp .inps .inp4{
+        width: 22rem;
+    }
+    
+    .form1 .inp .inps{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form1 .inp .inps .gends{
+        width: 10rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .form1 .inp .inps .gends .rdio{
+        margin-left: .5rem;
+        width: 1rem;
+    }
+    
+    .form1 .inp .inps .gends .rdio1{
+       width: 1rem;
+    }
+    
+    .form1 .inp.add{
+        width: 38%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+        margin-bottom: 1rem;
+    }
+
+    .form1 .inp.add  .adds input{
+        width: 22rem;
+    }
+    
+    .form1 .inp.add label{
+        padding-bottom: 0;
+    }
+    
+    .form1 .inp.add .adds{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+    }
+    .form1 .btns{
+        width: 95%;
+        height: 3rem;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .form1 .btns .cancel{
+        width: 7rem;
+        height: 2rem;
+    }
+    
+    .form1 .btns .confirm{
+      width: 7rem;
+       height: 2rem;
+    }
+    
+}
+
+@media (max-width:1000px){
+    
+    nav{
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .links{
+        width: 10%;
+    }
+
+    .links.edit{
+        width: 10%;
+    }
+}
+
+@media(max-width: 800px){
+    nav{
+        height: 4.5rem;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav img{
+        width: 4rem;
+    }
+    
+    .links{
+        width: 12%;
+    }
+
+    .links.edit{
+        width: 10%;
+    }
+
+    .form1{
+        padding-top: 5rem;
+    }
+    
+
+    .form2{
+        padding-top: 5.5rem;
+        width: 100%;
+        height: 100dvh;
+        justify-content: flex-start;
+    }
+
+    .form2 .btns{
+        margin-top: 0;
+        width: 90%;
+        height: 3rem;
+    }
+
+    .form2 .btns .confirm{
+        width: 7rem;
+        height: 2rem;
+    }
+    
+    .btns .cancel{
+        width: 7rem;
+        height: 2rem; 
+    }
+    
+}
+
+@media(max-width: 600px){
+
+    .title{
+        width: 80%;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    
+    .links{
+        width: 16%;
+    }
+
+    .links.edit{
+        width: 14%;
+    }
+}
+
+@media(max-width: 475px){
+
+    .title{
+        font-size: .9rem;
+    }
+  
+    .links{
+        width: 20%;
+    }
+
+    .links.edit{
+        width: 19%;
+    }
+
+    .form2{
+        padding-top: 5.5rem;
+        width: 100%;
+        height: 100dvh;
+        justify-content: flex-start;
+    }
+
+    .form2 .btns{
+        width: 96%;
+    }
+
+    .form2 .inps label{
+        font-size: 1.1rem;
+    }
+    
+    .form2 .inps input{
+        height: 2rem;
+        width: 21rem;
+    }
+
+    .form1 .btns{
+        width: 100%;
+        height: 3rem;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+        
+    .form1 .btns .confirm{
+        margin-right: 0;
+    }
+}
